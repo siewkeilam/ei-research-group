@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Created by: Reality Software | www.realitysoftware.ca
+Released by: Flash Gallery | www.flash-gallery.org
+Note: This is a free template released under the Creative Commons Attribution 3.0 license, 
+which means you can use it in any way you want provided you keep links to authors intact.
+Don't want our links in template? You can pay a link removal fee: www.realitysoftware.ca/templates/
+You can also purchase a PSD-file for this template.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+<div id="logo"><a href="#">Constraint-Aware Hardware-Software Partitioning</a></div>
+</div>
+
+<div id="menu">
+<a href="index.html">Home</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="team.html">Team</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="research.html">Research</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="publication.html">Publication</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+
+<div id="sidebar">
+<h1><b>Our Projects</b></h1>
+<div class="project"><a href="vei.html"><img src="images/visual ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dsei.html"><img src="images/domain specific ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="srei.html"><img src="images/secure and reliable ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dei.html"><img src="images/distributed ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+</div>
+
+
+
+<div id="text">
+
+<h1>Motivation</h1><br>
+
+Hardware-software partitioning has become a key issue in the design of embedded systems when performance constraints have to be met and chip area is critical. The designer has to decide to implement an application component in hardware or software to meet tight system constraints. It has been shown that efficient techniques for partitioning can achieve results in performance or power superior to software-only solution. The general hardware-software partitioning problem is known to be NP-complete. Therefore, developing an algorithm to achieve the optimal or near-optimal solution will be a significant contribution to both the engineering and academic fields.<BR>
+
+CAPRI incorporates a number of multi-constraint aware hardware software partitioning strategies that can produce optimal/near optimal partitioning solutions.
+
+<BR><BR>
+
+<h1>Case Study: Accelerating EKF-based Sensorless Motor Control Algorithm</h1><br>
+The Brushless DC (BLDC) motor is widely used in industrial, automotive and domestic applications as it offer numerous advantages e.g. high efficiency, maintainability, compact form, etc. Position and speed sensors are required to control BLDC motors as the current commutation is performed based on the rotor position. However, these sensors are undesirable from the standpoint of size, cost, maintenance, and reliability. Due to these reasons, techniques for sensorless BLDC motor control have attracted wide attention. This project aims to implement an Extended Kalman Filter (EKF) based sensorless motor control algorithm on the microprocessor to control a 3-phase BLDC motor.<BR>
+
+Application profiling results on the EKF motor controller revealed that the timing constraint can be met if the most compute intensive function (i.e. Kalman gain computation) in the EKF motor controller is implemented as a hardware accelerator on FPGA. We have proposed an optimized FPGA implementation for Kalman gain computation. The proposed implementation overlaps the computation time with the data transfer time between the microprocessor and the FPGA, hence reducing the overall latency.<BR>
+
+Hardware-software partitioning of EKF based sensorless motor control algorithm on the microprocessor-FPGA platform:<BR><BR>
+
+<img src="images/tricore-fpga-platform.jpg" alt="" width="50%" height="50%" class="centre"/><br/><br/>
+<BR>
+<h1>Publications</h1>
+
+<h2>International Refereed Journals</h2>
+<ol>
+<li>Wenjun Shi, Jigang Wu, Siew-Kei Lam, and Thambipillai Srikanthan, <B>“Algorithms for Bi-objective Multiple-choice Hardware/Software Partitioning”</B>, Computers and Electrical Engineering, Vol. 50, Issue C, February 2016, pp. 127-142 <a href="Paper/2016A-Shi-CEE.pdf">[PDF]</a></li>
+<li>Guiyuan Jiang, Jigang Wu, Siew-Kei Lam, Thambipillai Srikanthan and Jizhou Sun, <B>“Algorithmic Aspects of Graph Reduction for Hardware/Software Partitioning”</B>, Journal of Supercomputing, Vol. 71, No. 6, June 2015, pp. 2251-2274 <a href="Paper/2015A-Jiang-JSC.pdf">[PDF]</a> </li>
+<li>Yan Lin Aung, Siew-Kei Lam, and Thambipillai Srikanthan, <B>“Addressing Productivity Challenges in Domain Specific Reconfigurable Platforms: A Case Study on EKF-based Motor Control”</B>, Journal of Low Power Electronics, Vol. 10, No 3, September 2014, pp. 455-466</li>
+<li>Jigang Wu, Pu Wang, Siew-Kei Lam, Thambipillai Srikanthan, <B>“Efficient Heuristic and Tabu Search for Hardware/Software Partitioning"</B>, The Journal of Supercomputing, Vol. 66, No. 1, October 2013, pp. 118-134 <a href="Paper/2013A-Wu-JSC.pdf">[PDF]</a> </li>
+</ol>
+
+<h2>International Refereed Conferences/Workshops</h2>
+<ol>
+<li>Kratika Garg, Yan Lin Aung, Siew-Kei Lam, and Thambipillai Srikanthan, <B>"KnapSim - Run-time Efficient Hardware-Software Partitioning Technique for FPGA"</B>, IEEE International System-on-Chip Conference (SOCC), September 2015</li> 
+<li>Wenjun Shi, Jigang Wu, Siew-Kei Lam, and Thambipillai Srikanthan, <B>“Algorithmic Aspects for Bi-objective Multiple-choice Hardware/Software Partitioning”</B>, International Symposium on Parallel Architectures, Algorithms and Programming (PAAP), July 2014, pp. 7-12</li> 
+<li>Yan Lin Aung, Siew-Kei Lam and Thambipillai Srikanthan, <B>“Hardware-Software Codesign of EKF-based Motor Control for Domain-Specific Reconfigurable Platform"</B>, 4th International Symposium on Electronic System Design (ISED), December 2013, pp. 93-97 <a href="Paper/2013A-Aung-ISED.pdf">[PDF]</a> </li>
+<li>Yan Lin Aung, Siew-Kei Lam and Thambipillai Srikanthan, <B>"Compiler-Assisted Technique for Rapid Performance Estimation of FPGA-Based Processors"</B>, IEEE International SoC Conference (SOCC), September 2011 <a href="Paper/2011A-Aung-SOCC.pdf">[PDF]</a> </li> 
+<li>Aung Y.L., Siew-Kei Lam and Srikanthan T., <B>“Performance Estimation Framework for FPGA-based Processors”</B>, International Conference on Field-Programmable Technology (ICFPT), December 2010, pp. 413-416 </li>
+<li>Prakash A., Siew-Kei Lam, Singh A.K. and Srikanthan T., <B>“Rapid Design Exploration Framework for Application-Aware Customization of Soft Core Processors”</B>, International Conference on Field Programmable Logic and Applications (FPL), August/September 2009, pp. 539-542</li>
+</ol>
+<BR>
+
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+<div id="footer">
+<div id="footer_left">
+Copyright 2020 EI Research Group
+</div>
+<div id="footer_right">
+
+<!-- Please do not change or delete these links. Read the license! Thanks. :-) -->
+<a href="http://www.realitysoftware.ca/services/website-development/design/">Web design</a> released by <a href="http://www.flash-gallery.org/">Flash Gallery</a><br/>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

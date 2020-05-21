@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Created by: Reality Software | www.realitysoftware.ca
+Released by: Flash Gallery | www.flash-gallery.org
+Note: This is a free template released under the Creative Commons Attribution 3.0 license, 
+which means you can use it in any way you want provided you keep links to authors intact.
+Don't want our links in template? You can pay a link removal fee: www.realitysoftware.ca/templates/
+You can also purchase a PSD-file for this template.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+<div id="logo"><a href="#">CRATE: CHiPES Rapid Area-Time Estimator</a></div>
+</div>
+
+<div id="menu">
+<a href="index.html">Home</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="team.html">Team</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="research.html">Research</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="publication.html">Publication</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+
+<div id="sidebar">
+<h1><b>Our Projects</b></h1>
+<div class="project"><a href="vei.html"><img src="images/visual ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dsei.html"><img src="images/domain specific ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="srei.html"><img src="images/secure and reliable ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dei.html"><img src="images/distributed ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+</div>
+
+
+
+<div id="text">
+
+<h1>Motivation</h1><br>
+
+Field Programmable Gate Arrays (FPGAs) are increasingly being adopted in embedded systems due to their ability to meet the technological and market uncertainties. Modern FPGA architectures incorporate a multitude of Intellectual Property cores that include soft and hard processors. The additional processing options that are available on FPGAs have increased the complexity of design space explorations, which have become unmanageable in traditional design methodologies especially for large applications. System-level design methodologies are expected to play a central role in the design success of current and future embedded products.<BR>
+
+One of the key tasks in modern system-level design is to automatically generate/recommend suitable hardware-software components that meet the conflicting design constraints (cost, performance, power, time) in embedded systems. In order to identify suitable candidates for hardware realization, it is necessary to predict the quantitative outcome of mapping the application portions to hardware.<BR>
+
+While high-level estimation has been employed in most of the commercial Application Specific Integrated Circuit (ASIC) based Electronic Design Automation (EDA) tools, accurate high level estimation of FPGA-based implementation remains a challenging research area. Till date, the most widely used FPGA-based design tools  do not incorporate high-level estimation. The ability to achieve good estimation results for FPGA-based architectures is mainly hampered by the difficulty in predicting: 1) the effects of logic synthesis in FPGA tools for mapping the application code to the fine-grained programmable logic blocks, and 2) the post place and route interconnect delay. Existing works often lead to unreliable results as they do not consider the combined effects of logic synthesis and physical implementation during high-level estimation.
+<BR><BR>
+<h1>Research Objective</h1><br>
+This research aims to develop a design exploration framework that can rapidly generate custom co-processor structures for FPGAs from C functions. In particular, the design exploration framework must incorporate efficient high-level area-time estimation that can accurately predict the quantitative outcome of mapping the application portions to FPGA without undergoing time-consuming RTL synthesis and implementation.
+<BR><BR>
+<h1>CRATE Framework</h1><br>
+The CRATE framework relies on the Trimaran compiler infrastructure for its advanced scheduling schemes to expose the inherent parallelism in C-based algorithms. We have employed a co-processor template to assist in the estimation of the hardware data and control-path. The original Very Long Instruction Word (VLIW) machine model in Trimaran was modified to incorporate heterogeneous Functional Units (FUs) that will be bounded to the co-processor template.<BR>
+
+The proposed data-path estimation technique relies on a hybrid approach, which uses bit-width sensitive estimation models that are based on pre-characterized parameters for area-time estimation of the FUs. In addition, the proposed delay estimation takes into account the post implementation interconnect delay by performing a simplified floor-planning procedure to predict the placement of the FUs on FPGA. A RTL code generator has been developed to automatically generate synthesizable RTL codes for a given C code segment.<BR><BR>
+
+<img src="images/crate-framework.jpg" alt="" width="65%" height="65%" class="centre"/><br/><br/>
+
+<h1>Publications</h1>
+
+<h2>International Refereed Journals</h2>
+<ol>
+<li>My Chuong Lieu, Siew-Kei Lam and Thambipillai Srikanthan, <B>“Rapid Area-Time Estimation Technique for Porting C-Based Applications onto FPGA Platforms"</B>, Scalable Computing: Practice and Experience (Special Issue on High Performance Reconfigurable Computing), Vol. 8, No. 4, December 2007, pp. 359-371 <a href="Paper/2007A-Lieu-SCPE.pdf">[PDF]</a> </li> 
+</o1>
+
+<h2>International Refereed Conferences/Workshops</h2>
+<ol>
+<li>Yan Lin Aung, Siew-Kei Lam, and Thambipillai Srikanthan, <B>"Rapid Estimation of DSPs Utilization for Efficient High-Level Synthesis”</B>, International Conference on Digital Signal Processing (DSP), July 2015, pp. 1261-1265</li>
+<li>Yan Lin Aung, Siew-Kei Lam and Thambipillai Srikanthan, <B>“Area-Time Estimation of C-based Functions for Design Space Exploration"</B>, International Conference on Field-Programmable Technology (ICFPT), December 2012</li> 
+<li>Lieu My Chuong, Yan Lin Aung, Siew-Kei Lam, Thambipillai Srikanthan and Lim Chai Soon, <B>"Automatic Compilation of C Applications for FPGA-based Hardware Acceleration"</B>, 4th International Symposium on Parallel Architecture, Algorithms and Programming (PAAP), December 2011, pp. 223-227 <a href="Paper/2011A-Lieu-PAAP.pdf">[PDF]</a> </li> 
+<li>Sinha S., Dhawan U., Lam S.K. and Srikanthan T., <B>"A Novel Binding Algorithm to Reduce Critical Path Delay During High Level Synthesis"</B>, IEEE Computer Society Annual Symposium on VLSI (ISVLSI), July 2011, pp. 278-283</li>
+<li>Dhawan U., Sinha S., Siew-Kei Lam and Srikanthan T., <B>“Extended Compatibility Path Based Hardware Binding Algorithm for Area-Time Efficient Designs”</B>, Asia Symposium on Quality Electronic Design (ASQED), August 2010, pp. 151-156</li>
+<li>Lieu M.C., Siew-Kei Lam and Srikanthan T., <B>“Area-Time Estimation of Controller for Porting C-Based Functions onto FPGA”</B>, IEEE/IFIP International Symposium on Rapid System Prototyping (RSP), June 2009, pp. 145-151 <a href="Paper/2009A-Lieu-RSP.pdf">[PDF]</a> </li>
+<li>Lieu M.C., Siew-Kei Lam and Srikanthan T., <B>“High-Level Delay Estimation Technique for Porting C-based Applications on FPGA”</B>, IEEE International Symposium on Industrial Electronics (ISIE), June/July 2008, pp. 1991-1996</li>
+</ol>
+<BR>
+
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+<div id="footer">
+<div id="footer_left">
+Copyright 2020 EI Research Group
+</div>
+<div id="footer_right">
+
+<!-- Please do not change or delete these links. Read the license! Thanks. :-) -->
+<a href="http://www.realitysoftware.ca/services/website-development/design/">Web design</a> released by <a href="http://www.flash-gallery.org/">Flash Gallery</a><br/>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

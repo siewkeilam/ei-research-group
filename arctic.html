@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Created by: Reality Software | www.realitysoftware.ca
+Released by: Flash Gallery | www.flash-gallery.org
+Note: This is a free template released under the Creative Commons Attribution 3.0 license, 
+which means you can use it in any way you want provided you keep links to authors intact.
+Don't want our links in template? You can pay a link removal fee: www.realitysoftware.ca/templates/
+You can also purchase a PSD-file for this template.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+<div id="logo"><a href="#">ARCTIC: Architecture Aware Custom Instructions</a></div>
+</div>
+
+<div id="menu">
+<a href="index.html">Home</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="team.html">Team</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="research.html">Research</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="publication.html">Publication</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+
+<div id="sidebar">
+<h1><b>Our Projects</b></h1>
+<div class="project"><a href="vei.html"><img src="images/visual ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dsei.html"><img src="images/domain specific ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="srei.html"><img src="images/secure and reliable ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dei.html"><img src="images/distributed ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+</div>
+
+
+
+<div id="text">
+
+<h1>Motivation</h1><br>
+
+Future embedded systems will require a higher degree of customization to manage the growing complexity of the applications. At the same time, they must continue to facilitate a high degree of flexibility to meet the shrinking Time-to-Market (TTM) window. There exists an urgent need to develop techniques that focus on increasing the design productivity of highly customized embedded systems, in order to improve product life cycles, and reduce TTM pressure and Non-Recurring Engineering (NRE) costs.<BR>
+
+Computing platforms such as Reconfigurable Instruction Set Processors (RISPs) provide a promising solution to realize a balanced trade-off between flexibility and customization.
+
+<BR><BR>
+
+<h1>Research Objective</h1><br>
+
+The main aim of this research work is to develop novel techniques and design methodologies for automatically generating efficient custom instructions that are capable of optimizing the utilization of RISPs. In particular, the proposed methods must incorporate architecture-aware strategies to generate area-time efficient custom instructions without the need to undergo time consuming hardware design iterations.
+
+<BR><BR>
+
+<h1>ARCTIC Framework</h1><br>
+
+The Architecture AwaRe CusTom InstruCtions (ARCTIC) framework incorporates a number of novel techniques to realize area-time efficient custom instructions on RISPs. ARCTIC incorporates the following:<BR>
+<ul>
+<li>Graph covering strategy for rapid selection of custom instructions.</li>
+<li>Cluster generation technique to estimate critical path delays and area utilization of custom instructions on Look-Up Table (LUT) based FPGAs.</li>
+<li>Design exploration framework that can rapidly identify a reduced set of profitable custom instructions without the need for actual hardware synthesis.</li>
+<li>Novel cluster merging strategy that takes into account the architectural constraints of the FPGA device in order to realize custom instructions with low area-delay product.</li>
+<li>Hierarchical loop partitioning strategy that reduces the complexity of the search space for determining the runtime custom instruction configurations in area constrained RISPs.</li>
+<li>Scheme for managing the runtime reconfiguration of custom instructions on a partially reconfigurable architecture.</li>
+</ul>
+<BR>
+
+<img src="images/arctic-framework.jpg" alt="" width="75%" height="75%" class="centre"/><br/><br/>
+
+<h1>Publications</h1>
+
+<h2>International Refereed Journals</h2>
+<ol>
+<li>Siew-Kei Lam, Christopher T. Clarke, and Thambipillai Srikanthan, <B>“Exploiting FPGA-Aware Merging of Custom Instructions for Runtime Reconfiguration”</B>, ACM Transactions on Reconfigurable Technology and Systems, Vol. 7, No. 3, Article 26, November 2014 <a href="Paper/2014A-Lam-TRETS.pdf">[PDF]</a> </li>
+<li>Siew-Kei Lam, Thambipillai Srikanthan and Christopher T. Clarke, <B>“Rapid Evaluation of Custom Instruction Selection Approaches with FPGA Estimation”</B>, ACM Transactions on Embedded Computing Systems, Vol. 13, No. 4, Article 75, August 2014 <a href="Paper/2014A-Lam-TECS.pdf">[PDF]</a> </li>
+<li>Alok Prakash, Siew-Kei Lam, Christopher T. Clarke, Thambipillai Srikanthan, <B>“FPGA-Aware Techniques for Rapid Generation of Profitable Custom Instructions”</B>, Microprocessors and Microsystems, Vol. 37, No. 3, May 2013, pp 259–269</li>
+<li>Siew-Kei Lam, Thambipillai Srikanthan and Cristopher T. Clarke, <B>“Architecture-Aware Technique for Mapping Area-Time Efficient Custom Instructions onto FPGAs"</B>, IEEE Transactions on Computers, Vol. 60, No. 5, May 2011, pp. 680-692 <a href="Paper/2011A-Lam-TC.pdf">[PDF]</a></li>
+<li>Tao Li, Wu Jigang, Siew-Kei Lam, Thambipillai Srikanthan and Xicheng Lu, <B>“Selecting Profitable Custom Instructions for Reconfigurable Processors"</B>, Journal of Systems Architecture (Special Issue on HW/SW Co-Design: Tools and Applications), Vol. 56, No. 8, August 2010, pp. 340-351 <a href="Paper/2010A-Li-JSA.pdf">[PDF]</a> </li>
+<li>Siew-Kei Lam, Thambipillai Srikanthan T and Christopher T. Clarke, <B>“Selecting Profitable Custom Instructions for Area-Time-Efficient Realization on Reconfigurable Architectures"</B>, IEEE Transactions on Industrial Electronics, Vol. 56, No. 10, October 2009, pp. 3998-4005 <a href="Paper/2009A-Lam-TIE.pdf">[PDF]</a></li>
+<li>Siew-Kei Lam and Thambipillai Srikanthan, <B>“Rapid Design of Area-Efficient Custom Instructions for Reconfigurable Embedded Processing"</B>, Journal of Systems Architecture, Vol. 55, No. 1, January 2009, pp. 1-14 <a href="Paper/2009A-Lam-JSA.pdf">[PDF]</a> </li>
+<li>Siew-Kei Lam, Thambipillai Srikanthan and Christopher T. Clarke, <B>“Rapid Generation of Custom Instructions Using Predefined Dataflow Structures"</B>, Microprocessors and Microsystems (Special Issue on FPGA-based Reconfigurable Computing), Vol. 30, No. 6, September 2006, pp. 355-366 <a href="Paper/2006A-Lam-MM.pdf">[PDF]</a></li> 
+</ol>
+
+<h2>International Refereed Conferences/Workshops</h2>
+<ol>
+<li>Deshya Wijesundera, Alok Prakash, Siew Kei Lam, and Thambipillai Srikanthan, <B>“Exploiting Configuration Dependencies for Rapid Area-efficient Customization of Soft-core Processors”</B>, 19th International Workshop on Software and Compilers for Embedded Systems (SCOPES), May 2016, pp. 163-172</li>
+<li>Alok Prakash, Christopher T. Clarke, Siew-Kei Lam and Thambipillai Srikanthan, <B>“Modelling the Communication Overhead of Using Local Memory Blocks”</B>, 24th IEEE International Conference on Application-specific Systems, Architectures and Processors (ASAP), June 2013, pp. 31-34</li>
+<li>Siew-Kei Lam, Thambipillai Srikanthan and Christopher T. Clarke, <B>"Exploiting FPGA-Aware Merging of Custom Instructions for Runtime Reconfiguration"</B>, 7th International Workshop on Reconfigurable Communication-centric Systems-on-Chip, July 2012 <a href="Paper/2012A-Lam-ReCoSoC.pdf">[PDF]</a> </li>
+<li>Alok Prakash, Siew-Kei Lam, Christopher T. Clarke and Thambipillai Srikanthan, <B>"Instruction Set Customization for Area-Constrained FPGA Designs"</B>, IEEE International SoC Conference (SOCC), September 2011</li> 
+<li>Siew-Kei Lam, Deng Y., Hu J., Zhou X. and Srikanthan T., <B>“Hierarchical Loop Partitioning for Rapid Generation of Runtime Configurations</B>”, Lecture Notes in Computer Science (LNCS), Springer-Verlag, Berlin Heidelberg: Reconfigurable Computing: Architectures, Tools and Applications, Vol. 5992/2010, 2010, pp. 282-293 <a href="Paper/2010A-Lam-ARC.pdf">[PDF]</a> </li> 
+<li>Prakash A., Siew-Kei Lam, Singh A.K. and Srikanthan T., <B>“Architecture-Aware Custom Instruction Generation for Reconfigurable Processors”</B>, Lecture Notes in Computer Science (LNCS), Springer-Verlag, Berlin Heidelberg: Reconfigurable Computing: Architectures, Tools and Applications, Vol. 5992/2010, 2010, pp. 414-419</li>
+<li>Siew-Kei Lam, Bharathi N. Krishnan and Thambipillai Srikanthan, <B>“Efficient Management of Custom Instructions for Run-Time Reconfigurable Instruction Set Processors"</B>, IEEE International Conference on Field-Programmable Technology (ICFPT), December 2006</li>
+<li>Siew-Kei Lam, Deng Yun and Thambipillai Srikanthan, <B>“Morphable Structures for Reconfigurable Instruction Set Processors"</B>, Lecture Notes in Computer Science (LNCS), Springer-Verlag, Berlin Heidelberg: Advances in Computer Systems Architecture, Vol. 3740, pp. 450-463 (Tenth Asia-Pacific Computer Systems Architecture Conference (ACSAC), October 2005 <a href="Paper/2005A-Lam-ACSAC.pdf">[PDF]</a> </li> 
+</ol>
+<BR>
+
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+<div id="footer">
+<div id="footer_left">
+Copyright 2020 EI Research Group
+</div>
+<div id="footer_right">
+
+<!-- Please do not change or delete these links. Read the license! Thanks. :-) -->
+<a href="http://www.realitysoftware.ca/services/website-development/design/">Web design</a> released by <a href="http://www.flash-gallery.org/">Flash Gallery</a><br/>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Created by: Reality Software | www.realitysoftware.ca
+Released by: Flash Gallery | www.flash-gallery.org
+Note: This is a free template released under the Creative Commons Attribution 3.0 license, 
+which means you can use it in any way you want provided you keep links to authors intact.
+Don't want our links in template? You can pay a link removal fee: www.realitysoftware.ca/templates/
+You can also purchase a PSD-file for this template.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+<div id="logo"><a href="#">Vision-Guided Endoscopy</a></div>
+</div>
+
+<div id="menu">
+<a href="index.html">Home</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="team.html">Team</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="research.html">Research</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="publication.html">Publication</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+
+<div id="sidebar">
+<h1><b>Our Projects</b></h1>
+<div class="project"><a href="vei.html"><img src="images/visual ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dsei.html"><img src="images/domain specific ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="srei.html"><img src="images/secure and reliable ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+<div class="project"><a href="dei.html"><img src="images/distributed ei.png" alt="" width="80%" height="80%" class="right"/><br/></a></div>
+</div>
+
+<div id="text">
+
+<h1>Motivation</h1><br>
+
+In an endoscopic procedure, endoscope is navigated in the colon along the direction of the lumen to facilitate observation of the internal disorders of the gastrointestinal tract. Identification and segmentation of lumen region is therefore essential. High speed realization of the segmentation algorithm resulting in accurate extraction of the lumen region is required to facilitate online robotic auto diagnosis and navigation in an endoscopic surgery procedure.<BR>
+
+Most image processing algorithms are based on software approaches running on microcomputers with huge memories. While these processors are conveniently available, they are often not fast enough for truly demanding real-time processing tasks. As real-time processing is critical in the automatic guidance of micro-robot in endoscopic procedures, there is a need for developing high performance dedicated embedded processing modules.
+
+<BR><BR>
+
+<h1>Research Objective</h1><br>
+This research aims to develop a low cost accelerator for automatic segmentation of the lumen region and boundary from endoscopic images accurately in real time.
+
+<BR><BR>
+
+<h1>Low-Cost and High-Speed Architecture for Between-Class Variance Computation of APT</h1><br>
+The Adaptive Progressive Thresholding (APT) method can be used for the real-time segmentation of lumen region in grey level endoscopic images. It is an iterative procedure in which only the object pixels with intensity lower than the current threshold is selected to facilitate further segmentation in the subsequent iteration.<BR><BR>
+
+<img src="images/apt.jpg" alt="" width="50%" height="50%" class="centre"/><br/><br/>
+
+We have designed a novel architecture for the between-class variance computations of APT to facilitate rapid lumen region detection of endoscopic images. Binary logarithm conversion techniques are employed to minimise the otherwise severe bottleneck within the iterative loop. A minimal look-up table (LUT) is employed in the logarithm conversion as the required content can be computed on the fly from the available LUT contents. In addition, the computation unit consists of only simple adders and shifters. One distinct advantage of our approach is that it allows for the desired accuracy of the between-class variance computations to be manipulated dynamically based on application requirements. Comparisons with the existing architecture show that the proposed architecture is superior both in terms of area and time.<BR><BR>
+<img src="images/apt-architecture.jpg" alt="" width="65%" height="65%" class="centre"/><br/><br/>
+
+<h1>Publications</h1>
+
+<h2>International Refereed Journals</h2>
+<ol>
+<li>C.S. Lim, S.K. Lam, T. Srikanthan and H. Tian, <B>“High Speed Segmentation of Endoscopic Images for Micro-Robotic Auto Navigation"</B>, International Journal of Humanoid Robotics, Vol. 3, No. 4, December 2006, pp. 523-545 <a href="Paper/2006A-Lim-IJHR.pdf">[PDF]</a></li> 
+<li>H. Tian, S.K. Lam and T. Srikanthan, <B>“Area-Time Efficient Between-Class Variance Module for Adaptive Segmentation Process"</B>, IEE Proceedings on Vision, Image and Signal Processing, Vol. 150, No. 4, August 2003, pp. 263-269</li> 
+</o1>
+
+<h2>International Refereed Conferences/Workshops</h2>
+<ol>
+<li>Pon Nidhya Elango and Siew-Kei Lam, <B>“Bounded Iterative Thresholding for Lumen Region Detection in Endoscopic Images</B>”, 14th International Conference on Control, Automation, Robotics and Vision (ICARV), November 2016 <a href="Paper/2016A-Pon-ICARV.pdf">[PDF]</a></li>
+<li>Tian H., S.K. Lam and Srikanthan T., <B>“Implementing Otsu’s Thresholding Process Using Area-Time Efficient Logarithmic Approximation Unit”</B>, IEEE International Symposium on Circuits and Systems (ISCAS), Vol. 4, May 2003, pp. 21-24</li>
+<li>Tian H., S.K. Lam, Srikanthan T. and Chang C.H., <B>“An Efficient Architecture for Adaptive Progressive Thresholding”</B>, IEEE Asia-Pacific Conference on Circuits and Systems (APCCAS), Vol. 1, October 2002, pp. 513-516 <a href="Paper/2002A-Tian-APPCAS.pdf">[PDF]</a> </li> 
+<li>Tian H., Srikanthan T., Asari K.V. and S.K. Lam, <B>“Study on the Effect of Object to Camera Distance on Polynomial Expansion Coefficients in Barrel Distortion Correction”</B>, IEEE Proceedings of the 5th Southwest Symposium on Image Analysis and Interpretation (SSIAI), April 2002 <a href="Paper/2002A-Tian-SSIAI.pdf">[PDF]</a></li> 
+</o1>
+
+<BR>
+
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+<div id="footer">
+<div id="footer_left">
+Copyright 2020 EI Research Group
+</div>
+<div id="footer_right">
+
+<!-- Please do not change or delete these links. Read the license! Thanks. :-) -->
+<a href="http://www.realitysoftware.ca/services/website-development/design/">Web design</a> released by <a href="http://www.flash-gallery.org/">Flash Gallery</a><br/>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
