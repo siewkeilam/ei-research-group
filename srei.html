@@ -53,6 +53,8 @@ Cryptographic schemes in computers can be deployed in unforeseen adversarial set
 <BR>
 Side-channel-aware code obfuscation is a compiler-driven method that performs program transformations on the original program to protect against reverse engineering while at the same time, ensuring low information leakage in the obfuscated codes and considering the execution time of a program. An optimization algorithm is used to determine the combination of program transformations that leads to solutions with the best obscurity-performance trade-offs, and low side-channel leakage. 
 <BR>Dynamic hardware diversification is achieved by using a compiler to automatically generate instructions in the security-critical segments of the program, which are executed on a co-processor. At runtime, the co-processor produces random (diversified) characteristics on each execution instance of the instructions. Unlike all the existing hardware obfuscation methods, the proposed hardware diversification does not require changes to the base processor architecture. The co-processor introduces negligible hardware and power overhead. 
+<BR>
+Our current solution integrates the widely used LLVM compiler infrastructure and the RISC-V FPGA soft-processor.
 <BR><BR>
 <img src="images/diversity.jpg" alt="" width="75%" height="75%" class="centre"/><br/><br/>
 
