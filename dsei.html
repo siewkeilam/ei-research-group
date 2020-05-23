@@ -46,6 +46,47 @@ The increasing commercial interest in AI chips bears a strong indication that sp
 <BR>
 Given the economic importance of domain-specific architectures, our research aims to dramatically increase the design productivity through innovative design methodologies that rely on hardware-efficient Intellectual Property (IP) cores in order to expedite algorithm-to-architecture mapping on the heterogenous processing elements of FPGA based SoCs.
 <BR>
+The following are some of our projects in this area:
+<BR><BR>
+
+<h1><u>Lifelong Deep Learning Architecture</u></h1><br>
+Conventional deep learning models are trained once and deployed. However, models deployed in agents operating in dynamic environments need to constantly acquire new knowledge, while preventing catastrophic forgetting of previous knowledge. This ability is commonly referred to as lifelong learning. 
+<BR>
+We proposed a FPGA based architecture for a Self-Organization Neural Network SONN), that in combination with a Convolutional Neural Network (CNN) can perform class-incremental lifelong learning for object classification. The proposed SONN architecture is capable of performing unsupervised learning on input features from the CNN by dynamically growing neurons and connections. In order to meet the tight constraints of edge computing, we introduced efficient scheduling methods to maximize resource reuse and parallelism, as well as approximate computing strategies.
+<BR><BR>
+<img src="images/lifelong_dl.png" alt="" width="100%" height="100%" class="centre"/><br/><br/>
+<img src="images/lifelong_dl_hw.png" alt="" width="50%" height="50%" class="centre"/><br/>
+
+<h2>Publications</h2>
+<ol>
+<li>Duvindu Piyasena, Miyuru Thathsara, Sathursan Kanagarajah, Siew Kei Lam and Meiqing Wu, <B>“Dynamically Growing Neural Network Architecture for Lifelong Deep Learning on the Edge”</B>, Field Programmable Logic and Applications (FPL), August 2020 [Accepted]</li> 
+<li>Duvindu Piyasena, Sathursan Kanagarajah, Siew-Kei Lam and Meiqing Wu, <B>“Lifelong Learning with Regularization and Data Augmentation”</B>, IEEE/RSJ International Conference on Intelligent Robots and Systems, November 2019 [Macau, China] <a href="Paper/2019F-Duvindu-IROS.pdf">[PDF]</a></li>
+<li>Duvindu Piyasena, Rukshan Wickramasinghe, Debdeep Paul, Siew Kei Lam and Meiqing Wu, <B>“Reducing Dynamic Power in Streaming CNN Hardware Accelerators by Exploiting Computational Redundancies”</B>, Field Programmable Logic and Applications (FPL), September 2019 [Barcelona, Spain] <a href="Paper/2019H-Duvindu-FPL.pdf">[PDF]</a></li> 
+<li>Duvindu Piyasena, Rukshan Wickramasinghe, Debdeep Paul, Siew Kei Lam and Meiqing Wu, <B>“Lowering Dynamic Power of a Stream-based CNN Hardware Accelerator”</B>, IEEE 21st International Workshop on Multimedia Signal Processing (MMSP), September 2019 [Kuala Lumpur, Malaysia] <a href="Paper/2019G-Duvindu-MMSP.pdf">[PDF]</a></li> 
+</ol>
+<BR>
+
+<h1><u>Hardware Accelerator for Visual SLAM</u></h1><br>
+The pervasive adoption of cameras in various cutting-edge technologies today such as self-driving cars, robotics, virtual
+reality and augmented reality, have elevated the need for computer vision algorithms that are robust and can deliver
+high-speed solutions. A core application in these technologies is visual odometry or Simultaneous Localization And Mapping
+(SLAM), which enables the system to localize itself in unknown environments. Feature matching plays a central role in this application to estimate the motion trajectory from one frame to the next.
+<BR>
+We proposed a deep-pipelined stream processing architecture that is capable of extracting rBRIEF (rotation-aware Binary Robust Independent Elementary Features) from high-throughput video frames. To achieve high processing rate and low complexity hardware, the proposed architecture incorporates an enhanced moving summation strategy to calculate the key-points’ patch moments and employs approximate computations to achieve patch rotation. Multiplier-less circuitry is introduced throughout the architecture to avoid the use of costly multipliers.
+<BR><BR>
+<img src="images/orb.png" alt="" width="100%" height="100%" class="centre"/><br/><br/>
+
+<h2>Publications</h2>
+<ol>
+<li>Siew-Kei Lam, Teck Chuan Lim, Meiqing Wu, Bin Cao, and Bhavan A. Jasani, <B>“Data-path Unrolling with Logic Folding for Area-Time Efficient FPGA-based FAST Corner Detector”</B>, Journal of Real-Time Image Processing, Vol. 16, No. 6, December 2019, pp 2147–2158 <a href="Paper/2019J-Lam-JRTIP.pdf">[PDF]</a></li>
+<li>Thinh Hung Pham, Phong Tran, Siew-Kei Lam, <B>“High-Throughput and Area-Optimized Architecture for rBRIEF Feature Extraction”</B>, IEEE Transactions on Very Large Scale Integration System, Vol. 27, No. 4, April 2019, pp. 747-756 <a href="Paper/2019I-Thinh-TVLSI.pdf">[PDF]</a></li>
+<li>Siew-Kei Lam, Guiyuan Jiang, Meiqing Wu, Bin Cao, <B>“Area-Time Efficient Streaming Architecture for FAST and BRIEF Detector”</B>, IEEE Transactions on Circuits and Systems II, Vol. 66, No. 2, February 2019, pp. 282-286 <a href="Paper/2019B-Lam-TCASII.pdf">[PDF]</a></li>
+<li>Bhavan A. Jasani, Siew-Kei Lam, Pramod K. Meher, and Meiqing Wu, <B>“Threshold-Guided Design and Optimization for Harris Corner Detector Architecture”</B>, IEEE Transactions on Circuits and Systems for Video Technology, Vol. 28, No. 12, December 2018, pp. 3516-3526 <a href="Paper/2018F-Bhavan-TVCSVT.pdf">[PDF]</a></li>
+<li>Phong Tran, Thinh Hung Pham, Siew-Kei Lam, Meiqing Wu, and Bhavan A. Jasani, <B>“Stream-based ORB Feature Extractor with Dynamic Power Optimization”</B>, International Conference on Field-Programmable Technology (ICFPT), December 2018 [Okinawa, Japan] <a href="Paper/2018G-Phong-ICFPT.pdf">[PDF]</a></li> 
+<li>Siew-Kei Lam, Teck Chuan Lim, Meiqing Wu, Bin Cao, Bhavan A. Jasani, <B>“Area-Time Efficient FAST Corner Detector using Data-path Transposition”</B>, IEEE Transactions on Circuits and Systems II, Vol. 65, No. 9, September 2018, pp. 1224-1228 <a href="Paper/2018D-Lam-TCASII.pdf">[PDF]</a></li>
+<li>Siew-Kei Lam, Rakesh Kumar Bijarniya, and Meiqing Wu, <B>“Lowering Dynamic Power in Stream-based Harris Corner Detection Architecture”</B>, International Conference on Field-Programmable Technology (ICFPT), December 2017 [Melbourne, Australia] <a href="Paper/2017D-Lam-ICFPT.pdf">[PDF]</a></li> 
+</ol>
+<BR>
 </div>
 
 <div class="clear"></div>
