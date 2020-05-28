@@ -72,7 +72,7 @@ This research has been supported by the National Research Foundation, Singapore 
 Memory integrity trees are widely-used to protect external memories in embedded systems against replay, splicing and spoofing attacks. However, existing methods often result in high-performance overhead that is proportional to the height of the tree. Reducing the height of the integrity tree by increasing its arity, however, leads to frequent overflowing of the counters that
 are used for encryption in the tree. 
 <BR>
-We a memory authentication framework, called DISSECT, which utilizes a dynamic memory integrity tree that can adapt to the memory access patterns of the application by progressively adjusting the tree height and arity in order to significantly reduce performance overhead. 
+We proposed a memory authentication framework, called DISSECT, which utilizes a dynamic memory integrity tree that can adapt to the memory access patterns of the application by progressively adjusting the tree height and arity in order to significantly reduce performance overhead. 
 <BR>
 As illustrated below, this is achieved by 1) initializing an integrity tree structure with the largest arity possible to meet the security requirements, 2) dynamically skewing the tree such that the more frequently accessed memory locations are positioned closer to the tree root (overcomes the tree height problem), and 3) dynamically splitting the tree at nodes with counters that are about to overflow (overcomes the counter overflow problem).
 <BR><BR>
